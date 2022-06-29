@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="About Nexus">
+        <title>About Nexus</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script>
+            $.get("index.html", function(data){
+                $(".bar").replaceWith(data);
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="bar"></div>
+    </body>
+</html>

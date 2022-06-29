@@ -1,48 +1,57 @@
-body {
+* {
     margin: 0;
-    background: lightblue;
+    padding: 0;
+    font-family: "Times New Roman", serif;
+}
+
+body {
+    background-image: url("nexus.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #151515;
+}
+
+.bar {
+    background: gray;
+    height: 7vh;
+    display: table;
+    width: 100%;
+}
+
+
+li {
+    list-style-type: none;
+    margin: 20px;
+    display: inline-flex;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.8s;
+    animation: menuappeartext 0.9s forwards;
+}
+
+a:hover {
+    color: cyan;
+    font-size: 25px;
+}
+
+
+/* Header stuff */
+
+.header {
     text-align: center;
-    animation: colorchange 3.2s infinite
 }
 
-h1 {
-    font-family: 'Times New Roman', serif;
-    animation: colorchange 3.2s infinite;
-    font-size: 100;
-}
+/* Animations */
 
-@keyframes colorchange {
-    0% {
-        background-color: purple;
-        color: purple;
+@keyframes menuappeartext {
+    from {
+        font-size: 0px;
     }
 
-    30% {
-        background-color: green;
-        color; green;
-    }
-
-    45% {
-        background-color: red;
-        color: red;
-    }
-
-    50% {
-        background-color: orange;
-        color: orange;
-    }
-
-    60% {
-        background-color: red;
-        color: red;
-    }
-
-    78% {
-        background-color: green;
-        color: green;
-    }
-
-    100% {
-        background-color: purple;
+    to {
+        font-size: 17px;
     }
 }
