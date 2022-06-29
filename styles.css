@@ -2,4 +2,47 @@ body {
     margin: 0;
     background: lightblue;
     text-align: center;
+    animation: colorchange 3.2s infinite
+}
+
+h1 {
+    font-family: 'Times New Roman', serif;
+    animation: colorchange 3.2s infinite;
+    font-size: 100;
+}
+
+@keyframes colorchange {
+    0% {
+        background-color: purple;
+        color: purple;
+    }
+
+    30% {
+        background-color: green;
+        color; green;
+    }
+
+    45% {
+        background-color: red;
+        color: red;
+    }
+
+    50% {
+        background-color: orange;
+        color: orange;
+    }
+
+    60% {
+        background-color: red;
+        color: red;
+    }
+
+    78% {
+        background-color: green;
+        color: green;
+    }
+
+    100% {
+        background-color: purple;
+    }
 }
