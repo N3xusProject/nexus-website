@@ -8,13 +8,13 @@
         <link rel="stylesheet" href="styles.css">
         <script src="//code.jquery.com/jquery.min.js"></script>
         <script>
-            $.get("index.html", function(data){
-                $(".bar").replaceWith(data);
+            $.get("nav.html", function(data){
+                $(".header").replaceWith(data);
             });
         </script>
     </head>
 
     <body>
-        <div class="bar"></div>
+        <div class="header"></div>
     </body>
 </html>
