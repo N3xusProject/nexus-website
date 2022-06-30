@@ -18,11 +18,30 @@ body {
     width: 100%;
 }
 
-#coming-soon {
+.header-text {
     justify-content: stretch;
     color: white;
     text-align: center;
-    transform: translate(0%, 600%);         /* To make kinda vertically centered */
+    transform: translateY(200%);
+}
+
+.text {
+    color: white;
+    text-align: center;
+    justify-content: stretch;
+}
+
+.list {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+
+#about {
+    color: white;
+    text-align: center;
+    transform: translateY(34%);
 }
 
 
